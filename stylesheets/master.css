@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+@import url(http://fonts.googleapis.com/css?family=Play);
+html,body {
+	background:#eee;
+	color:#424242;
+	font-family: 'Sorts Mill Goudy', serif;
+	margin:0;
+	padding:0;
+	text-rendering: optimizeLegibility;
+}
+a {color:#424299;text-decoration:none}
+a:hover,a:focus {color:#0000ff;text-decoration:underline}
+p a {text-decoration:underline}
+h1 {
+	margin:0;
+	padding:0;
+	color:#666;
+	font-family: 'Play', sans-serif;
+	position:absolute;top:5px;left:5px;
+}
+nav {
+	position:fixed;
+	left:0;
+	top:80px;
+}
+nav a {
+	display:block;
+	text-align:right;
+	background:#666;
+	color:#fff;
+	padding:5px;
+	margin-bottom:1em;
+	font-size:0.6em;
+	width:100px;
+	text-decoration:none;
+	font-family: 'Play', sans-serif;
+	text-transform:uppercase;
+}
+nav a:hover {
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+}
+article,.content {
+	margin:70px 0 100px 140px;
+	position:relative;
+	max-width:900px;
+	min-width:320px;
+}
+h2,h3,h4,h5,h6,.postlist,.date {
+	margin:1em 0 0.5em;
+	padding:0;
+	line-height:0.8em;
+	font-family: 'Play', sans-serif;
+}
+.entry-title {margin-top:0}
+p {
+	margin:0 0 0.5em;
+	text-indent:1.5em;
+}
+.postlist{
+	list-style:none;
+	text-indent:0;
+	margin:0;
+	padding:0;
+	line-height:1.6em;
+}
+.postlist .postdate,.date {
+	font-size:0.7em;
+	color:#999;
+}
+.date {
+	position:absolute;
+	top:0;
+	right:50px;
+}
+.bookmark:hover {
+	text-decoration:none;
+}
+.author {
+	display:none;
+}
+pre code {
+	display:block;
+	margin: 0 0 0 3em;
+}
+#footer {
+	position:fixed;
+	bottom:10px;
+	left:25px;
+}
+#githubbanner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	z-index:0;
+	padding:0;
+	margin:0;
+	color:transparent;
+	background:transparent url('http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png') no-repeat top right;
+	height:140px;
+	width:140px;
+	border-radius: 0 0 0 140px;
+}
+.refrence {
+	margin:1em 0 0;
+	text-indent:0;
+}
+
+.embedly_tweet_content .author{display:inline}
+.embedly_tweet_content p {text-indent:0}
+.embedly_tweet_content span {font-family: 'Play', sans-serif;}
+
+@media screen and (max-device-width: 640px) {
+	#githubbanner,#footer,.date,nav a {display:none}
+	h1 {
+		text-align:right;
+	}
+	article,.content {
+		margin:60px 5px 10px;
+		position:relative;
+		min-width:220px;
+		width:auto;
+	}
+	nav {
+		position:relative;
+		left:0;
+		top:0;
+	}
+	nav a.mobile {
+		display:block;
+		margin:0 5px 0.5em;
+		font-size:1em;
+		text-align:center;
+		width:auto;
+	}
+}
